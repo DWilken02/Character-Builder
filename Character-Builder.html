@@ -7,14 +7,43 @@
 </head>
 <body>
   <h1>Character-Builder</h1>
-  <form id="character-builder">
-    <label for="input1">Name:</label>
-    <input id="input1" type="text">
-    <label for="input2">Age:</label>
-    <input id="input2" type="text">
-    <label for="input3">Personality</label>
-    <input id="input3" type="text">
-    <button type="submit" class="btn">Submit!</button>
+  <p><strong>Gender:</strong></p>
+  <form id="select-form">
+    <select id="gender">
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+    <button type="submit">Submit Selection</button>
+  </form>
+  <p><strong>Traits:</strong></p>
+  <form id="radio-form">
+    <label>
+      <input type="radio" name="trait" value="Tall" checked>
+      Tall
+    </label><br>
+    <label>
+      <input type="radio" name="trait" value="Small" checked>
+      Small
+    </label><br>
+    <label>
+      <input type="radio" name="trait" value="Funny" checked>
+      Funny
+    </label><br>
+    <label>
+      <input type="radio" name="trait" value="Smart" checked>
+      Smart
+    </label><br>
+    <button type="submit">Submit selection</button>
+  </form><br>
+  <form id="date-of-birth">
+    <label for="born"><Strong>Date of birth:</Strong></label>
+    <input id="born" type="date">
+    <button type="submit">Submit Selection</button>
+  </form><br>
+  <form id="color-form">
+    <label for="color"><strong>Favorite color:</strong></label>
+    <input id="color" type="color">
+    <button type="submit">Submit Selection</button>
   </form>
 
   <h2>Results</h2>

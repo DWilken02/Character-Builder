@@ -28,4 +28,7 @@ function favoritecolor(event) {
   event.preventDefault();
   const color = document.querySelector("#color").value;
   document.querySelector("#output").innerText += "\nColor: " + color;
+  if (color == "#4254f5") {
+    document.body.style.backgroundColor=color;
+  }
 }
